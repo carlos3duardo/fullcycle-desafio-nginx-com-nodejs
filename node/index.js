@@ -32,7 +32,6 @@ app.get('/', (req,res) => {
         if (err) throw err;
 
         rows.forEach((row) => {
-            console.log(row.id, row.name);
             userList = userList + `<li>${row.name}</li>`;
         });
 
