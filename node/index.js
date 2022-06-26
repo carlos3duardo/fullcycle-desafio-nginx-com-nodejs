@@ -14,11 +14,6 @@ const conn = mysql.createConnection({
 
 const createTable = 'create table if not exists people (id int not null auto_increment, name varchar(255) not null, primary key (id))';
 conn.query(createTable);
-// conn.end();
-
-// let userName = Faker.Name.findName();
-// conn.query('insert into people(name) values (?)', [userName]);
-// conn.end();
 
 app.get('/', (req,res) => {
 

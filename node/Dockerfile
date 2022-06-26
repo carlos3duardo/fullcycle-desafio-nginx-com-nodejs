@@ -1,10 +1,8 @@
-FROM node:15
+FROM node:18
 
 WORKDIR /usr/src/app
 
 COPY . .
-
-RUN apt-get update && apt-get install -y wget
 
 RUN npm install
 
